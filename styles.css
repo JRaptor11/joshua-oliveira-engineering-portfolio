@@ -53,7 +53,7 @@ body {
 }
 
 .section {
-  padding: 56px 0;
+  padding: 72px 0;
 }
 
 .section h2 {
@@ -77,12 +77,19 @@ body {
   border-radius: 12px;
   padding: 22px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .project-card h3 {
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
+  color: #111827;
 }
 
 .project-card a {
@@ -91,6 +98,11 @@ body {
   text-decoration: none;
   font-weight: bold;
   color: #2563eb;
+  transition: color 0.2s ease;
+}
+
+.project-card a:hover {
+  color: #1d4ed8;
 }
 
 .two-col {
