@@ -105,10 +105,18 @@ body {
   color: #1d4ed8;
 }
 
+.project-card:hover .project-thumb {
+  transform: scale(1.03);
+}
+
+.project-thumb {
+  transition: transform 0.3s ease;
+}
+
 .project-thumb {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  max-height: 180px;      /* limits size but doesn’t force it */
+  object-fit: contain;    /* keeps full image visible */
   border-radius: 10px;
   margin-bottom: 14px;
   display: block;
