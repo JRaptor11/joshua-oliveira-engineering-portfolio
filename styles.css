@@ -54,6 +54,7 @@ body {
 
 .section {
   padding: 72px 0;
+  border-top: 1px solid rgba(0,0,0,0.04);
 }
 
 .section h2 {
@@ -63,7 +64,7 @@ body {
 }
 
 .alt {
-  background: #e5e7eb;
+  background: #f1f5f9;
 }
 
 .project-grid-auto {
