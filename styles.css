@@ -66,6 +66,12 @@ body {
   background: #e5e7eb;
 }
 
+.project-grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -169,7 +175,8 @@ body {
 }
 
 @media (max-width: 600px) {
-  .project-grid {
+  .project-grid 
+  .project-grid-auto {
     grid-template-columns: 1fr;
   }
 }
