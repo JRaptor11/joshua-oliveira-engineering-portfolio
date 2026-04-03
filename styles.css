@@ -115,8 +115,9 @@ body {
 
 .project-thumb {
   width: 100%;
-  max-height: 180px;      /* limits size but doesn’t force it */
-  object-fit: contain;    /* keeps full image visible */
+  max-height: 400px;
+  object-fit: contain;   /* key change */
+  background: #f3f4f6;   /* adds neutral background */
   border-radius: 10px;
   margin-bottom: 14px;
   display: block;
