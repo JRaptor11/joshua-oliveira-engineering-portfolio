@@ -136,10 +136,6 @@ body {
 }
 
 .project-thumb {
-  transition: transform 0.3s ease;
-}
-
-.project-thumb {
   width: 100%;
   max-height: 400px;
   object-fit: contain;   /* key change */
@@ -147,6 +143,7 @@ body {
   border-radius: 10px;
   margin-bottom: 14px;
   display: block;
+  transition: transform 0.3s ease;
 }
 
 .two-col {
@@ -175,7 +172,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .project-grid 
+  .project-grid,
   .project-grid-auto {
     grid-template-columns: 1fr;
   }
